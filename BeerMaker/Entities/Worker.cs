@@ -7,7 +7,7 @@ namespace BeerMaker
 	public class Worker
 	{
 		public int ID { get; set; }
-		public Guid Uuid { get; set; }
+		public Guid Uuid { get; set; } // guuid tylko u¿ytkownik/admin/pracownik // dla reszty tylko ID
 		public string Email { get; set; }
 		public string HashedPassword { get; set; }
 		public string FirstName { get; set; }

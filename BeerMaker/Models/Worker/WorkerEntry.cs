@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 
 namespace BeerMaker.Models
 {
+    // tutaj pola które podajemy przy tworzeniu/edycji użytkownika 
     public class WorkerEntry
     {
     }

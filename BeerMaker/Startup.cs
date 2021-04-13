@@ -13,6 +13,7 @@ using Microsoft.Extensions.Logging;
 
 namespace BeerMaker
 {
+    // tutaj bez zmian
     public class Startup
     {
         public Startup(IConfiguration configuration)

@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace BeerMaker.Utils
+namespace BeerMaker.Enums
 {
-    public class TokenLifetimeValidator
+    // tutaj bez zmian
+    public enum UserType
     {
+        Worker = 0,
+        Admin = 1
     }
+
 }

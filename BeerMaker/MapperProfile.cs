@@ -1,11 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using AutoMapper;
 
 namespace BeerMaker
 {
-    public class MapperProfile
+    // tutaj już bez zmian
+    public class MapperProfile: Profile
     {
+        public MapperProfile()
+        {
+
+        }
     }
 }

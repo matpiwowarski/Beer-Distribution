@@ -5,12 +5,12 @@ using System.Threading.Tasks;
 
 namespace BeerMaker.Utils
 {
-    // tutaj bez zmian
-    public static class PasswordHash
+    public static class RegexValidator
     {
-        public static string Create(Guid guid, string password)
+        // dodać inne metody
+        public static bool ValidateEmail(string email)
         {
-            return "hashed";
+            return true;
         }
     }
 }
