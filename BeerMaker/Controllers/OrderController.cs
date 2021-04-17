@@ -10,11 +10,11 @@ namespace BeerMaker.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class ClientController : ControllerBase
+    public class OrderController : ControllerBase
     {
-        private readonly ILogger<ClientController> _logger;
+        private readonly ILogger<OrderController> _logger;
 
-        public ClientController(ILogger<ClientController> logger)
+        public OrderController(ILogger<OrderController> logger)
         {
             _logger = logger;
         }
@@ -23,25 +23,25 @@ namespace BeerMaker.Controllers
         {
             return null;
         }
-        public async Task<IActionResult> GetItem(Guid uuid)
+        public async Task<IActionResult> GetItem(int ID)
         {
             return null;
         }
-        public async Task<IActionResult> AddItem([FromBody] Client item)
-        {
-            return null;
-        }
-        public async Task<IActionResult> UpdateItem(Guid uuid, [FromBody] Client item)
+        public async Task<IActionResult> GetStatus(int ID)
         {
             return null;
         }
 
-        public async Task<IActionResult> DeleteItem(Guid uuid)
+        public async Task<IActionResult> AddItem([FromBody] Order item)
+        {
+            return null;
+        }
+        public async Task<IActionResult> UpdateItem(int ID, [FromBody] Order item)
         {
             return null;
         }
 
-        public async Task<IActionResult> SendSurvey()
+        public async Task<IActionResult> DeleteItem(int ID)
         {
             return null;
         }

@@ -19,7 +19,8 @@ namespace BeerMaker.Models
 		public string Style { get; set; }
 		public string AromaticTasteProfile { get; set; }
 		public string Malt { get; set; }
-		public double Rating { get; set; }
+		public List<double> Rating { get; set; }
+		public double AverageRating { get; set; }
 		public double Popularity { get; set; }
 	}
 }
