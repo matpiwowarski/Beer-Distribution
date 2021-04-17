@@ -12,5 +12,21 @@ namespace BeerMaker.Utils
         {
             return true;
         }
+        public static bool ValidateFirstName(string name)
+        {
+            return true;
+        }
+        public static bool ValidateLastName(string name)
+        {
+            return true;
+        }
+        public static bool ValidatePassword(string password)
+        {
+            return true;
+        }
+        public static bool ValidateAddress(string address)
+        {
+            return true;
+        }
     }
 }

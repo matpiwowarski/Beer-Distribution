@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BeerMaker.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -12,5 +13,6 @@ namespace BeerMaker.Entities
         public List<Beer> BeerList { get; set; }
         public Warehouse Warehouse { get; set; }
         public DateTime Date { get; set; }
+        public OrderStatus OrderStatus { get; set; }
     }
 }
