@@ -1,11 +1,10 @@
-using BeerMaker.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace BeerMaker
+namespace BeerMaker.Models
 {
-	public class Worker
+	public class Client
 	{
 		public int ID { get; set; }
 		public Guid Uuid { get; set; } // guuid tylko u¿ytkownik/admin/pracownik // dla reszty tylko ID
@@ -16,7 +15,6 @@ namespace BeerMaker
 		public string PhoneNumber { get; set; }
 		public string Address { get; set; }
 		public DateTime DateOfBirth { get; set; }
-		public UserType RoleType { get; set; }
 		//public virtual ICollection<Statistics> Statistics { get; set; }
 	}
 }

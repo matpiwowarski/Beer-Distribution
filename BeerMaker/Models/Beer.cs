@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BeerMaker.Models
 {
-    public class BeerViewer
+    public class Beer
     {
 		public int ID { get; set; }
 		public string Name { get; set; }

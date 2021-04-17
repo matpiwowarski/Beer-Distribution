@@ -11,6 +11,6 @@ namespace BeerMaker.Models
 		public int ID { get; set; }
 		public string PhoneNumber { get; set; }
 		public string Address { get; set; }
-		public List<Beer> Beers { get; set; }
+		public List<Entities.Beer> Beers { get; set; }
 	}
 }
