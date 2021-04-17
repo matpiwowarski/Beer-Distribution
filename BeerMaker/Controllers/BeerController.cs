@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BeerMaker.Models;
+using BeerMaker.Params;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
@@ -10,11 +11,11 @@ namespace BeerMaker.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WorkerController : ControllerBase
+    public class BeerController : ControllerBase
     {
-        private readonly ILogger<WorkerController> _logger;
+        private readonly ILogger<BeerController> _logger;
 
-        public WorkerController(ILogger<WorkerController> logger)
+        public BeerController(ILogger<BeerController> logger)
         {
             _logger = logger;
         }
@@ -23,20 +24,26 @@ namespace BeerMaker.Controllers
         {
             return null;
         }
-        public async Task<IActionResult> GetItem(Guid uuid)
-        {
-            return null;
-        }
-        public async Task<IActionResult> AddItem([FromBody] WorkerEntry item)
-        {
-            return null;
-        }
-        public async Task<IActionResult> UpdateItem(Guid uuid, [FromBody] WorkerEntry item)
+        public async Task<IActionResult> GetItem(int ID)
         {
             return null;
         }
 
-        public async Task<IActionResult> DeleteItem(Guid uuid)
+        public async Task<IActionResult> GetItemFilter(BeerSearchParams beerSearchParams)
+        {
+            return null;
+        }
+
+        public async Task<IActionResult> AddItem([FromBody] Beer item)
+        {
+            return null;
+        }
+        public async Task<IActionResult> UpdateItem(int ID, [FromBody] Beer item)
+        {
+            return null;
+        }
+
+        public async Task<IActionResult> DeleteItem(int ID)
         {
             return null;
         }

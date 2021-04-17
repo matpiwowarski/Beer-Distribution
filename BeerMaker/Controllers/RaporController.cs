@@ -10,33 +10,16 @@ namespace BeerMaker.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WorkerController : ControllerBase
+    public class RaporController : ControllerBase
     {
-        private readonly ILogger<WorkerController> _logger;
+        private readonly ILogger<RaporController> _logger;
 
-        public WorkerController(ILogger<WorkerController> logger)
+        public RaporController(ILogger<RaporController> logger)
         {
             _logger = logger;
         }
 
-        public async Task<IActionResult> GetItems()
-        {
-            return null;
-        }
-        public async Task<IActionResult> GetItem(Guid uuid)
-        {
-            return null;
-        }
-        public async Task<IActionResult> AddItem([FromBody] WorkerEntry item)
-        {
-            return null;
-        }
-        public async Task<IActionResult> UpdateItem(Guid uuid, [FromBody] WorkerEntry item)
-        {
-            return null;
-        }
-
-        public async Task<IActionResult> DeleteItem(Guid uuid)
+        public async Task<IActionResult> GenerateRaport(DateTime from, DateTime to, int WarehouseId,)
         {
             return null;
         }
