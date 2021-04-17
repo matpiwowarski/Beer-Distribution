@@ -10,6 +10,7 @@ namespace BeerMaker.Entities
         public Worker Worker { get; set; }
         public Client Client { get; set; }
         public List<Beer> BeerList { get; set; }
-        Warehouse Warehouse { get; set; }
+        public Warehouse Warehouse { get; set; }
+        public DateTime Date { get; set; }
     }
 }
