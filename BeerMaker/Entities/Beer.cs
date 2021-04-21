@@ -22,5 +22,7 @@ namespace BeerMaker.Entities
 		public List<double> Rating { get; set; }
 		public double AverageRating { get; set; }
 		public double Popularity { get; set; }
+		public string Price { get; set; }
+		public string ImageFileName { get; set; }
 	}
 }

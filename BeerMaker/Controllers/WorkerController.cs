@@ -40,5 +40,13 @@ namespace BeerMaker.Controllers
         {
             return null;
         }
+        public async Task<IActionResult> AddPicture(Guid uuid)
+        {
+            return null;
+        }
+        public async Task<IActionResult> DeletePicture(Guid uuid)
+        {
+            return null;
+        }
     }
 }
