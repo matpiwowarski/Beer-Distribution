@@ -10,16 +10,16 @@ namespace BeerMaker.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class RaporController : ControllerBase
+    public class ReportController : ControllerBase
     {
-        private readonly ILogger<RaporController> _logger;
+        private readonly ILogger<ReportController> _logger;
 
-        public RaporController(ILogger<RaporController> logger)
+        public ReportController(ILogger<ReportController> logger)
         {
             _logger = logger;
         }
 
-        public async Task<IActionResult> GenerateRaport(DateTime from, DateTime to, int WarehouseId,)
+        public async Task<IActionResult> GenerateReport(DateTime from, DateTime to, int WarehouseId)
         {
             return null;
         }
