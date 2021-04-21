@@ -14,5 +14,6 @@ namespace BeerMaker.Models
         public Warehouse Warehouse { get; set; }
         public DateTime Date { get; set; }
         public OrderStatus OrderStatus { get; set; }
+        public string TotalPrice { get; set; }
     }
 }
